@@ -209,14 +209,27 @@ function HomePage() {
                     </p>
                 </div>
             </div>
-            <div>You have selected: {selectedTeams}</div>
+            <br />
+            <div className="centered">You have selected: {selectedTeams}</div>
+            {selectedTeams === 0 &&
+                <div className="centered">
+                    <p>Select 2 More Teams</p>
+                </div>
+            }
+            {selectedTeams === 1 &&
+                <div className="centered">
+                    <p>Select 1 More Team</p>
+                </div>
+            }
             {selectedTeams === 2 &&
-                <div>
-                    <Link to="/gameMatchups">See matchups for 2 teams selected</Link>
+                <div className="centered">
+                    <p>
+                        <Link to="/gameMatchups">See matchups for 2 teams selected</Link>
+                    </p>
                 </div>
             }
             {selectedTeams > 2 &&
-                <div>
+                <div className="centered">
                     <p>You've selected too many teams! Remove before moving on</p>
                 </div>
             }
