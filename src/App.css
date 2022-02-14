@@ -36,3 +36,32 @@
 .app-body {
   margin: 5%;
 }
+
+.navbar {
+  background-color: darkblue;
+  padding: 20px 5%;
+  display: block;
+}
+
+.navbar a {
+  margin-right: 2%;
+  font-size: medium;
+  color: white;
+}
+
+.navbar a:hover {
+  background-color: black;
+  color: blanchedalmond;
+}
+
+.team p:hover {
+  background-color: black;
+  color: white;
+}
+
+.individualGame {
+  border: 1px solid black;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
