@@ -65,3 +65,12 @@
   padding-top: 5px;
   padding-left: 10px;
 }
+
+.stadiumImage {
+  width: 30%;
+  float: right;
+}
+
+.right {
+  text-align: right;
+}

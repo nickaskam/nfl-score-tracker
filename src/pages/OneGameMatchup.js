@@ -1,4 +1,5 @@
 import React from "react";
+import stadiumLogo from "../assets/lumenField.png";
 
 function OneGameMatchup({ team1, team2 }) {
     return (
@@ -10,7 +11,10 @@ function OneGameMatchup({ team1, team2 }) {
                 This game took place at Century Link Field
             </p>
             <div>
-                Map: add image
+                <p className="right">
+                    Map
+                    <img src={stadiumLogo} className="stadiumImage"/>
+                </p>
             </div>
             <div>
                 <table className="oneGame">

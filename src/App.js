@@ -13,7 +13,7 @@ function App() {
         <Navigation />
         <div className="app-body">
             <Routes>
-              <Route exact path='/' element={< HomePage name="nick" />}></Route>
+              <Route exact path='/' element={<HomePage />}></Route>
               <Route path='/gameMatchups' element={<GameMatchups team1="Dallas Cowboys" team2="Seattle Seahawks" />}></Route>
               <Route path='/oneGameMatchup' element={<OneGameMatchup team1="Dallas Cowboys" team2="Seattle Seahawks" />}></Route>
             </Routes>
