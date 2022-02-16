@@ -1,13 +1,32 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import cowboysLogo from "../assets/cowboys.png";
 import seahawksLogo from "../assets/seahawks.png";
+import nflTeams from "../data/nflTeams.json";
 
-function GameMatchups({ team1, team2 }) {
+function GameMatchups() {
+    let { team1, team2 } = useParams();
+    const loadedTeams = [...nflTeams]
+    
+    let loadedTeamsIndex = loadedTeams.length - 1
+    let team1Object = {}
+    let team2Object = {}
+
+    while (loadedTeamsIndex > 0) {
+        if (team1 === loadedTeams[loadedTeamsIndex].name) {
+            team1Object = loadedTeams[loadedTeamsIndex]
+        } else if (team2 === loadedTeams[loadedTeamsIndex].name) {
+            team2Object = loadedTeams[loadedTeamsIndex]
+        }
+        loadedTeamsIndex --;
+    }
+
+    // get logos
+
     return (
         <>
             <h1 className="centered">
-            <img src={cowboysLogo} className="logo" /> {team1} vs {team2} <img src={seahawksLogo} className="logo" />
+            <img src={cowboysLogo} className="logo" /> {team1Object.full_name} vs {team2Object.full_name} <img src={seahawksLogo} className="logo" />
             </h1>
             <p className="centered">
                 These are the matchups between the two teams heads to head recently

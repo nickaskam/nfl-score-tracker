@@ -1,37 +1,78 @@
 import React, {useState} from "react"
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 import nflTeams from "../data/nflTeams.json";
 
 function HomePage() {
+    const loadedTeams = [...nflTeams]
+    const navigate = useNavigate()
+    let loadedTeamsCount = loadedTeams.length
+
     const [checkedState, setCheckedState] = useState(
-        new Array(16).fill(false)
+        new Array(loadedTeamsCount).fill(false)
     );
     
+    // get the selection count
     const [selectedTeams, setSelectedTeams] = useState(0);
-
-    const loadedTeams = [...nflTeams]
-    let loadedTeamsCount = loadedTeams.length
-    console.log("loaded number of teams: " + loadedTeamsCount)
     
     const handleChange = (position) => {
-    const updatedCheckedState = checkedState.map((item, index) =>
-        index === position ? !item : item
-    );
+        const updatedCheckedState = checkedState.map((item, index) =>
+            index === position ? !item : item
+        );
 
-    setCheckedState(updatedCheckedState);
+        setCheckedState(updatedCheckedState);
 
-    const totalSelectedTeams = updatedCheckedState.reduce(
-        (sum, currentState) => {
-        if (currentState === true) {
-            return sum + 1;
-        }
-        return sum;
-        },
-        0
-    );
+        const totalSelectedTeams = updatedCheckedState.reduce(
+            (sum, currentState) => {
+            if (currentState === true) {
+                return sum + 1;
+            }
+            return sum;
+            },
+            0
+        );
 
-    setSelectedTeams(totalSelectedTeams);
+        setSelectedTeams(totalSelectedTeams);
     };
+
+    // filter the teams
+    const [filteredTeams, setFilteredTeams] = useState(loadedTeams) 
+
+    const filterChange = e => {
+        const value = e.target.value
+        console.log(value)
+        if (value != "all") {
+            setFilteredTeams(
+                loadedTeams.filter(loadedTeam => {
+                    if (loadedTeam.division === value) {
+                        return true
+                    }
+                    return false
+                })
+            )
+        } else {
+            setFilteredTeams(
+                loadedTeams.filter(loadedTeam => {
+                    return true
+                })
+            )
+        }
+    }
+
+    // find the matchups between the two selected teams
+    const findMatchups = () => {
+        // find which teams have been selected
+        let foundMatchups = []
+        for (let i = 0; i < loadedTeamsCount; i++) {
+            if (checkedState[i] == true) {
+                foundMatchups.push(i)
+            }
+        }
+        // add those teams to the URL and find their matchups
+        let team1 = loadedTeams[foundMatchups[0]].name
+        let team2 = loadedTeams[foundMatchups[1]].name
+        navigate(`/gameMatchups/${team1}/${team2}`)
+    } 
+
 
     return (
         <>
@@ -46,160 +87,34 @@ function HomePage() {
                 <p></p>
                 <p>Division Filter:</p>
                 <p>
-                    <select>
+                    <select onChange={filterChange}>
                         <option value="all">All</option>
-                        <option value="nfc-east">NFC East</option>
-                        <option value="nfc-north">NFC North</option>
-                        <option value="nfc-south">NFC South</option>
-                        <option value="nfc-west">NFC West</option>
+                        <option value="NFC East">NFC East</option>
+                        <option value="NFC North">NFC North</option>
+                        <option value="NFC South">NFC South</option>
+                        <option value="NFC West">NFC West</option>
+                        <option value="AFC East">AFC East</option>
+                        <option value="AFC North">AFC North</option>
+                        <option value="AFC South">AFC South</option>
+                        <option value="AFC West">AFC West</option>
                     </select>
                 </p>
             </div>
             <div className="row">
-                <p className="team n-e">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-0"
-                        checked={checkedState[0]}
-                        onChange={() => handleChange(0)}
-                    />
-                    Dallas Cowboys
-                </p>
-                <p className="team n-e">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-1"
-                        checked={checkedState[1]}
-                        onChange={() => handleChange(1)}
-                    />
-                    Philadelphia Eagles
-                </p>
-                <p className="team n-e">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-2"
-                        checked={checkedState[2]}
-                        onChange={() => handleChange(2)}
-                    />
-                    New York Giants
-                </p>
-                <p className="team n-e">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-3"
-                        checked={checkedState[3]}
-                        onChange={() => handleChange(3)}
-                    />
-                    Washington Commanders
-                </p>
-                <p className="team n-n">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-4"
-                        checked={checkedState[4]}
-                        onChange={() => handleChange(4)}
-                    />
-                    Green Bay Packers
-                </p>
-                <p className="team n-n">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-5"
-                        checked={checkedState[5]}
-                        onChange={() => handleChange(5)}
-                    />
-                    Minnesota Vikings
-                </p>
-                <p className="team n-n">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-6"
-                        checked={checkedState[6]}
-                        onChange={() => handleChange(6)}
-                    />
-                    Chicago Bears
-                </p>
-                <p className="team n-n">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-7"
-                        checked={checkedState[7]}
-                        onChange={() => handleChange(7)}
-                    />
-                    Detroit Lions
-                </p>
-                <p className="team n-s">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-1"
-                        checked={checkedState[8]}
-                        onChange={() => handleChange(8)}
-                    />
-                    Tampa Bay Buccanneers
-                </p>
-                <p className="team n-s">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-1"
-                        checked={checkedState[9]}
-                        onChange={() => handleChange(9)}
-                    />
-                    New Orleans Saints
-                </p>
-                <p className="team n-s">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-10"
-                        checked={checkedState[10]}
-                        onChange={() => handleChange(10)}
-                    />
-                    Atlanta Falcons
-                </p>
-                <p className="team n-s">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-11"
-                        checked={checkedState[11]}
-                        onChange={() => handleChange(11)}
-                    />
-                    Carolina Panthers
-                </p>
-                <p className="team n-w">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-12"
-                        checked={checkedState[12]}
-                        onChange={() => handleChange(12)}
-                    />
-                    Los Angeles Rams
-                </p>
-                <p className="team n-w">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-13"
-                        checked={checkedState[13]}
-                        onChange={() => handleChange(13)}
-                    />
-                    San Francisco 49ers
-                </p>
-                <p className="team n-w">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-14"
-                        checked={checkedState[14]}
-                        onChange={() => handleChange(14)}
-                    />
-                    Arizona Cardinals
-                </p>
-                <p className="team n-w">
-                    <input
-                        type="checkbox"
-                        id="custom-checkbox-15"
-                        checked={checkedState[15]}
-                        onChange={() => handleChange(15)}
-                    />
-                    Seattle Seahawks
-                </p>
+                {filteredTeams.map(({ full_name, division }, index) => {
+                    return (
+                        <p className={division} key={index}>
+                            <input
+                                type="checkbox"
+                                id={`custom-checkbox-${index}`}
+                                name={full_name}
+                                value={full_name}
+                                checked={checkedState[index]}
+                                onChange={() => handleChange(index)} />
+                            <label htmlFor={`custom-checkbox-${index}`}>{full_name}</label>
+                        </p>
+                    )
+                })}
             </div>
             <br />
             <div className="centered">You have selected: {selectedTeams}</div>
@@ -215,9 +130,9 @@ function HomePage() {
             }
             {selectedTeams === 2 &&
                 <div className="centered">
-                    <p>
-                        <Link to="/gameMatchups">See matchups for 2 teams selected</Link>
-                    </p>
+                    <button onClick={() => findMatchups([loadedTeams[1], loadedTeams[2]])}>
+                        See matchups for 2 teams selected
+                    </button>
                 </div>
             }
             {selectedTeams > 2 &&
