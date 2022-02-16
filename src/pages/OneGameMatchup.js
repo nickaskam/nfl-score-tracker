@@ -18,7 +18,7 @@ function OneGameMatchup({ team1, team2 }) {
                     <img src={stadiumLogo} className="stadiumImage"/>
                 </p>
             </div>
-            <div>
+            <div className="gameHolder">
                 <table className="oneGame">
                     <thead>
                         <tr className="oneGameRow">
