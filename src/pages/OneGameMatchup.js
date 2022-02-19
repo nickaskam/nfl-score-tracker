@@ -15,7 +15,6 @@ function OneGameMatchup() {
     for (let i = 0, len = gameMatchups.length; i < len; i++) {
         if (gameid == gameMatchups[i].id) {
             selectedGame = gameMatchups[i]
-            console.log("found game")
         }
     }
     console.log(selectedGame);

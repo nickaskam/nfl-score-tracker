@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import nflTeams from "../data/nflTeams.json";
 import nflGames3 from "../data/gameScores3.json";
 
