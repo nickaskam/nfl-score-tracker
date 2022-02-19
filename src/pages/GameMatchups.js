@@ -1,10 +1,11 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import nflTeams from "../data/nflTeams.json";
 import nflGames3 from "../data/gameScores3.json";
 
 function GameMatchups() {
     let { team1, team2 } = useParams();
+    const navigate = useNavigate()
     // keep track of wins, losses and ties
     let team1Wins = 0
     let team2Wins = 0
@@ -43,14 +44,19 @@ function GameMatchups() {
             activeGames.push(gameMatchups[i])
             // check for tie
             if (gameMatchups[i].score1 > gameMatchups[i].score2) {
-                team1Wins ++
-            } else if (gameMatchups[i].score2 > gameMatchups[i].score1) {
                 team2Wins ++
+            } else if (gameMatchups[i].score2 > gameMatchups[i].score1) {
+                team1Wins ++
             } else {
                 teamTies ++
             }
         }
     }
+
+    // find the matchups between the two selected teams
+    const findGames = (id) => {
+        navigate(`/oneGameMatchup/${id}`)
+    } 
 
     // get logos
 
@@ -64,17 +70,17 @@ function GameMatchups() {
                 These are the matchups between the two teams heads to head recently
             </p>
             <p className="centered">
-                Overall Record {team1Wins}-{team2Wins}-{teamTies}
+                Overall Record | {team1Object.full_name}: {team1Wins} | {team2Object.full_name}: {team2Wins} | Ties: {teamTies}
             </p>
             <div className="games">
-                {activeGames.reverse().map(({ date, team1, team2, score1, score2 }, index) => {
+                {activeGames.reverse().map(({ date, team1, team2, score1, score2, id }) => {
                     return (
-                        <div className="individualGame" key={index}>
+                        <div className="individualGame" key={id}>
                             <h3>Game Date: {date}</h3>
                             <p>{team1} {score1} vs {score2} {team2}</p>
-                            <Link to="/oneGameMatchup">
-                                See Game in Detail
-                            </Link>
+                            <button onClick={() => findGames(id)}>
+                                See the Game Details
+                            </button>
                         </div>
                     )
                 })}

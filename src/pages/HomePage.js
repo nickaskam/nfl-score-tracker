@@ -130,7 +130,7 @@ function HomePage() {
             }
             {selectedTeams === 2 &&
                 <div className="centered">
-                    <button onClick={() => findMatchups([loadedTeams[1], loadedTeams[2]])}>
+                    <button onClick={() => findMatchups()}>
                         See matchups for 2 teams selected
                     </button>
                 </div>

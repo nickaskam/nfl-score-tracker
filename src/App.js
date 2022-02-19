@@ -15,7 +15,7 @@ function App() {
             <Routes>
               <Route exact path='/' element={<HomePage/>}></Route>
               <Route path='/gameMatchups/:team1/:team2' element={<GameMatchups />}></Route>
-              <Route path='/oneGameMatchup' element={<OneGameMatchup team1="Dallas Cowboys" team2="Seattle Seahawks" />}></Route>
+              <Route path='/oneGameMatchup/:gameid' element={<OneGameMatchup />}></Route>
             </Routes>
           </div>
       </Router>

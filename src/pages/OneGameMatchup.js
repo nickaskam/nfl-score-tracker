@@ -1,20 +1,53 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import stadiumLogo from "../assets/lumenField.png";
 import cowboysLogo from "../assets/cowboys.png";
 import seahawksLogo from "../assets/seahawks.png";
+import nflTeams from "../data/nflTeams.json";
+import nflGames3 from "../data/gameScores3.json";
 
-function OneGameMatchup({ team1, team2 }) {
+function OneGameMatchup() {
+    let { gameid } = useParams()
+    const gameMatchups = [...nflGames3]
+    const loadedTeams = [...nflTeams]
+    let selectedGame = {}
+    
+    for (let i = 0, len = gameMatchups.length; i < len; i++) {
+        if (gameid == gameMatchups[i].id) {
+            selectedGame = gameMatchups[i]
+            console.log("found game")
+        }
+    }
+    console.log(selectedGame);
+
+    // Find the team names
+    let loadedTeamsIndex = loadedTeams.length - 1
+    let team1Object = {}
+    let team2Object = {}
+
+    while (loadedTeamsIndex > -1) {
+        if (selectedGame.team1 === loadedTeams[loadedTeamsIndex].code) {
+            team1Object = loadedTeams[loadedTeamsIndex]
+        } 
+        if (selectedGame.team2 === loadedTeams[loadedTeamsIndex].code) {
+            team2Object = loadedTeams[loadedTeamsIndex]
+        }
+        loadedTeamsIndex --;
+    }
+    console.log(team1Object)
+    console.log(team2Object)
+
     return (
         <>
             <h1>
-                12/2/2021: <img src={cowboysLogo} className="logo" /> {team1} vs {team2} <img src={seahawksLogo} className="logo" />
+                {selectedGame.date}: Logo1 {team1Object.full_name} vs {team2Object.full_name} Logo 2
             </h1>
             <p>
-                This game took place at Century Link Field
+                This game took place at insert place
             </p>
             <div>
                 <p className="right">
-                    Map
+                    Put in map
                     <img src={stadiumLogo} className="stadiumImage"/>
                 </p>
             </div>
@@ -23,37 +56,28 @@ function OneGameMatchup({ team1, team2 }) {
                     <thead>
                         <tr className="oneGameRow">
                             <th>Teams</th>
-                            <th>First Quarter</th>
-                            <th>Second Quarter</th>
-                            <th>Third Quarter</th>
-                            <th>Fourth Quarter</th>
                             <th>Final</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr className="oneGameRow">
-                            <td>{team1}</td>
-                            <td>9</td>
-                            <td>6</td>
-                            <td>7</td>
-                            <td>9</td>
-                            <td>31</td>
+                            <td>{team2Object.full_name}</td>
+                            <td>{selectedGame.score2}</td>
                         </tr>
                         <tr className="oneGameRow">
-                            <td>{team2}</td>
-                            <td>9</td>
-                            <td>14</td>
-                            <td>7</td>
-                            <td>8</td>
-                            <td>38</td>
+                            <td>{team1Object.full_name}</td>
+                            <td>{selectedGame.score1}</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div>
-                <p>Leading Passers:</p>
-                <p>Russell Wilson: 315 yards (27/40), 5 touchdowns, 0 interceptions</p>
-                <p>Dak Prescott: 472 yards (37/57), 3 touchdowns, 2 interceptions</p>
+                <p>What happened on this day: </p>
+                <ul>
+                    <li>place holder</li>
+                    <li>place holder</li>
+                    <li>place holder</li>
+                </ul>
             </div>
         </>
     )

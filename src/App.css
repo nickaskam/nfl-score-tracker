@@ -80,10 +80,16 @@
   text-align: center;
 }
 
+.gameHolder {
+  display: flex;
+  justify-content: center;
+}
+
 .oneGame {
   border: 1px solid black;
   padding: 10px;
   border-collapse: collapse;
+  align-self: center;
 }
 
 th, td {
