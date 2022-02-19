@@ -1,0 +1,818 @@
+[
+    {
+        "game_id": "1",
+        "home_team": "LAR",
+        "away_team": "CIN",
+        "home_score": "23",
+        "away_score": "20",
+        "game_date": "2022-02-13"   
+    },
+    {
+        "game_id": "2",
+        "home_team": "KC",
+        "away_team": "CIN",
+        "home_score": "24",
+        "away_score": "27",
+        "game_date": "2022-01-30"   
+    },
+    {
+        "game_id": "3",
+        "home_team": "LAR",
+        "away_team": "SF",
+        "home_score": "20",
+        "away_score": "17",
+        "game_date": "2022-01-30"   
+    },
+    {
+        "game_id": "4",
+        "home_team": "KC",
+        "away_team": "BUF",
+        "home_score": "42",
+        "away_score": "36",
+        "game_date": "2022-01-23"   
+    },
+    {
+        "game_id": "5",
+        "home_team": "TB",
+        "away_team": "LAR",
+        "home_score": "27",
+        "away_score": "30",
+        "game_date": "2022-01-23"   
+    },
+    {
+        "game_id": "6",
+        "home_team": "GB",
+        "away_team": "SF",
+        "home_score": "10",
+        "away_score": "13",
+        "game_date": "2022-01-22"   
+    },
+    {
+        "game_id": "7",
+        "home_team": "TEN",
+        "away_team": "CIN",
+        "home_score": "16",
+        "away_score": "19",
+        "game_date": "2022-01-22"   
+    },
+    {
+        "game_id": "8",
+        "home_team": "LAR",
+        "away_team": "ARI",
+        "home_score": "34",
+        "away_score": "11",
+        "game_date": "2022-01-17"   
+    },
+    {
+        "game_id": "9",
+        "home_team": "KC",
+        "away_team": "PIT",
+        "home_score": "42",
+        "away_score": "21",
+        "game_date": "2022-01-16"   
+    },
+    {
+        "game_id": "10",
+        "home_team": "TB",
+        "away_team": "PHI",
+        "home_score": "31",
+        "away_score": "15",
+        "game_date": "2022-01-16"   
+    },
+    {
+        "game_id": "11",
+        "home_team": "DAL",
+        "away_team": "SF",
+        "home_score": "17",
+        "away_score": "23",
+        "game_date": "2022-01-16"   
+    },
+    {
+        "game_id": "12",
+        "home_team": "BUF",
+        "away_team": "NE",
+        "home_score": "47",
+        "away_score": "17",
+        "game_date": "2022-01-15"   
+    },
+    {
+        "game_id": "13",
+        "home_team": "CIN",
+        "away_team": "LV",
+        "home_score": "26",
+        "away_score": "19",
+        "game_date": "2022-01-15"   
+    },
+    {
+        "game_id": 14,
+        "home_team": "LV",
+        "away_team": "LAC",
+        "home_score": 35,
+        "away_score": 32,
+        "game_date": "2022-01-09"
+      },
+      {
+        "game_id": 15,
+        "home_team": "TB",
+        "away_team": "CAR",
+        "home_score": 41,
+        "away_score": 17,
+        "game_date": "2022-01-09"
+      },
+      {
+        "game_id": 16,
+        "home_team": "MIA",
+        "away_team": "NE",
+        "home_score": 33,
+        "away_score": 24,
+        "game_date": "2022-01-09"
+      },
+      {
+        "game_id": 17,
+        "home_team": "LAR",
+        "away_team": "SF",
+        "home_score": 24,
+        "away_score": 27,
+        "game_date": "2022-01-09"
+      },
+      {
+        "game_id": 18,
+        "home_team": "BUF",
+        "away_team": "NYJ",
+        "home_score": 27,
+        "away_score": 10,
+        "game_date": "2022-01-09"
+      },
+      {
+        "game_id": 19,
+        "home_team": "ATL",
+        "away_team": "NO",
+        "home_score": 20,
+        "away_score": 30,
+        "game_date": "2022-01-09"
+      },
+      {
+        "game_id": 20,
+        "home_team": "HOU",
+        "away_team": "TEN",
+        "home_score": 25,
+        "away_score": 28,
+        "game_date": "2022-01-09"
+      },
+      {
+        "game_id": 21,
+        "home_team": "BAL",
+        "away_team": "PIT",
+        "home_score": 13,
+        "away_score": 16,
+        "game_date": "2022-01-09"
+      },
+      {
+        "game_id": 22,
+        "home_team": "JAX",
+        "away_team": "IND",
+        "home_score": 26,
+        "away_score": 11,
+        "game_date": "2022-01-09"
+      },
+      {
+        "game_id": 23,
+        "home_team": "NYG",
+        "away_team": "WAS",
+        "home_score": 7,
+        "away_score": 22,
+        "game_date": "2022-01-09"
+      },
+      {
+        "game_id": 24,
+        "home_team": "MIN",
+        "away_team": "CHI",
+        "home_score": 31,
+        "away_score": 17,
+        "game_date": "2022-01-09"
+      },
+      {
+        "game_id": 25,
+        "home_team": "DET",
+        "away_team": "GB",
+        "home_score": 37,
+        "away_score": 30,
+        "game_date": "2022-01-09"
+      },
+      {
+        "game_id": 26,
+        "home_team": "CLE",
+        "away_team": "CIN",
+        "home_score": 21,
+        "away_score": 16,
+        "game_date": "2022-01-09"
+      },
+      {
+        "game_id": 27,
+        "home_team": "ARI",
+        "away_team": "SEA",
+        "home_score": 30,
+        "away_score": 38,
+        "game_date": "2022-01-09"
+      },
+      {
+        "game_id": 28,
+        "home_team": "DEN",
+        "away_team": "KC",
+        "home_score": 24,
+        "away_score": 28,
+        "game_date": "2022-01-08"
+      },
+      {
+        "game_id": 29,
+        "home_team": "PHI",
+        "away_team": "DAL",
+        "home_score": 26,
+        "away_score": 51,
+        "game_date": "2022-01-08"
+      },
+      {
+        "game_id": 30,
+        "home_team": "PIT",
+        "away_team": "CLE",
+        "home_score": 26,
+        "away_score": 14,
+        "game_date": "2022-01-03"
+      },
+      {
+        "game_id": 31,
+        "home_team": "GB",
+        "away_team": "MIN",
+        "home_score": 37,
+        "away_score": 10,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 32,
+        "home_team": "NO",
+        "away_team": "CAR",
+        "home_score": 18,
+        "away_score": 10,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 33,
+        "home_team": "SF",
+        "away_team": "HOU",
+        "home_score": 23,
+        "away_score": 7,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 34,
+        "home_team": "LAC",
+        "away_team": "DEN",
+        "home_score": 34,
+        "away_score": 13,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 35,
+        "home_team": "BAL",
+        "away_team": "LAR",
+        "home_score": 19,
+        "away_score": 20,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 36,
+        "home_team": "WAS",
+        "away_team": "PHI",
+        "home_score": 16,
+        "away_score": 20,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 37,
+        "home_team": "NYJ",
+        "away_team": "TB",
+        "home_score": 24,
+        "away_score": 28,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 38,
+        "home_team": "NE",
+        "away_team": "JAX",
+        "home_score": 50,
+        "away_score": 10,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 39,
+        "home_team": "IND",
+        "away_team": "LV",
+        "home_score": 20,
+        "away_score": 23,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 40,
+        "home_team": "TEN",
+        "away_team": "MIA",
+        "home_score": 34,
+        "away_score": 3,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 41,
+        "home_team": "CIN",
+        "away_team": "KC",
+        "home_score": 34,
+        "away_score": 31,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 42,
+        "home_team": "CHI",
+        "away_team": "NYG",
+        "home_score": 29,
+        "away_score": 3,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 43,
+        "home_team": "BUF",
+        "away_team": "ATL",
+        "home_score": 29,
+        "away_score": 15,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 44,
+        "home_team": "SEA",
+        "away_team": "DET",
+        "home_score": 51,
+        "away_score": 29,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 45,
+        "home_team": "DAL",
+        "away_team": "ARI",
+        "home_score": 22,
+        "away_score": 25,
+        "game_date": "2022-01-02"
+      },
+      {
+        "game_id": 46,
+        "home_team": "NO",
+        "away_team": "MIA",
+        "home_score": 3,
+        "away_score": 20,
+        "game_date": "2021-12-27"
+      },
+      {
+        "game_id": 47,
+        "home_team": "LV",
+        "away_team": "DEN",
+        "home_score": 17,
+        "away_score": 13,
+        "game_date": "2021-12-26"
+      },
+      {
+        "game_id": 48,
+        "home_team": "KC",
+        "away_team": "PIT",
+        "home_score": 36,
+        "away_score": 10,
+        "game_date": "2021-12-26"
+      },
+      {
+        "game_id": 49,
+        "home_team": "HOU",
+        "away_team": "LAC",
+        "home_score": 41,
+        "away_score": 29,
+        "game_date": "2021-12-26"
+      },
+      {
+        "game_id": 50,
+        "home_team": "CAR",
+        "away_team": "TB",
+        "home_score": 6,
+        "away_score": 32,
+        "game_date": "2021-12-26"
+      },
+      {
+        "game_id": 51,
+        "home_team": "PHI",
+        "away_team": "NYG",
+        "home_score": 34,
+        "away_score": 10,
+        "game_date": "2021-12-26"
+      },
+      {
+        "game_id": 52,
+        "home_team": "NYJ",
+        "away_team": "JAX",
+        "home_score": 26,
+        "away_score": 21,
+        "game_date": "2021-12-26"
+      },
+      {
+        "game_id": 53,
+        "home_team": "NE",
+        "away_team": "BUF",
+        "home_score": 21,
+        "away_score": 33,
+        "game_date": "2021-12-26"
+      },
+      {
+        "game_id": 54,
+        "home_team": "MIN",
+        "away_team": "LAR",
+        "home_score": 23,
+        "away_score": 30,
+        "game_date": "2021-12-26"
+      },
+      {
+        "game_id": 55,
+        "home_team": "CIN",
+        "away_team": "BAL",
+        "home_score": 41,
+        "away_score": 21,
+        "game_date": "2021-12-26"
+      },
+      {
+        "game_id": 56,
+        "home_team": "ATL",
+        "away_team": "DET",
+        "home_score": 20,
+        "away_score": 16,
+        "game_date": "2021-12-26"
+      },
+      {
+        "game_id": 57,
+        "home_team": "DAL",
+        "away_team": "WAS",
+        "home_score": 56,
+        "away_score": 14,
+        "game_date": "2021-12-26"
+      },
+      {
+        "game_id": 58,
+        "home_team": "SEA",
+        "away_team": "CHI",
+        "home_score": 24,
+        "away_score": 25,
+        "game_date": "2021-12-26"
+      },
+      {
+        "game_id": 59,
+        "home_team": "TEN",
+        "away_team": "SF",
+        "home_score": 20,
+        "away_score": 17,
+        "game_date": "2021-12-23"
+      },
+      {
+        "game_id": 60,
+        "home_team": "PHI",
+        "away_team": "WAS",
+        "home_score": 27,
+        "away_score": 17,
+        "game_date": "2021-12-21"
+      },
+      {
+        "game_id": 61,
+        "home_team": "LAR",
+        "away_team": "SEA",
+        "home_score": 20,
+        "away_score": 10,
+        "game_date": "2021-12-21"
+      },
+      {
+        "game_id": 62,
+        "home_team": "CHI",
+        "away_team": "MIN",
+        "home_score": 9,
+        "away_score": 17,
+        "game_date": "2021-12-20"
+      },
+      {
+        "game_id": 63,
+        "home_team": "CLE",
+        "away_team": "LV",
+        "home_score": 14,
+        "away_score": 16,
+        "game_date": "2021-12-20"
+      },
+      {
+        "game_id": 64,
+        "home_team": "TB",
+        "away_team": "NO",
+        "home_score": 0,
+        "away_score": 9,
+        "game_date": "2021-12-19"
+      },
+      {
+        "game_id": 65,
+        "home_team": "BAL",
+        "away_team": "GB",
+        "home_score": 30,
+        "away_score": 31,
+        "game_date": "2021-12-19"
+      },
+      {
+        "game_id": 66,
+        "home_team": "SF",
+        "away_team": "ATL",
+        "home_score": 31,
+        "away_score": 13,
+        "game_date": "2021-12-19"
+      },
+      {
+        "game_id": 67,
+        "home_team": "DEN",
+        "away_team": "CIN",
+        "home_score": 10,
+        "away_score": 15,
+        "game_date": "2021-12-19"
+      },
+      {
+        "game_id": 68,
+        "home_team": "JAX",
+        "away_team": "HOU",
+        "home_score": 16,
+        "away_score": 30,
+        "game_date": "2021-12-19"
+      },
+      {
+        "game_id": 69,
+        "home_team": "PIT",
+        "away_team": "TEN",
+        "home_score": 19,
+        "away_score": 13,
+        "game_date": "2021-12-19"
+      },
+      {
+        "game_id": 70,
+        "home_team": "MIA",
+        "away_team": "NYJ",
+        "home_score": 31,
+        "away_score": 24,
+        "game_date": "2021-12-19"
+      },
+      {
+        "game_id": 71,
+        "home_team": "DET",
+        "away_team": "ARI",
+        "home_score": 30,
+        "away_score": 12,
+        "game_date": "2021-12-19"
+      },
+      {
+        "game_id": 72,
+        "home_team": "BUF",
+        "away_team": "CAR",
+        "home_score": 31,
+        "away_score": 14,
+        "game_date": "2021-12-19"
+      },
+      {
+        "game_id": 73,
+        "home_team": "NYG",
+        "away_team": "DAL",
+        "home_score": 6,
+        "away_score": 21,
+        "game_date": "2021-12-19"
+      },
+      {
+        "game_id": 74,
+        "home_team": "IND",
+        "away_team": "NE",
+        "home_score": 27,
+        "away_score": 17,
+        "game_date": "2021-12-18"
+      },
+      {
+        "game_id": 75,
+        "home_team": "ARI",
+        "away_team": "LAR",
+        "home_score": 23,
+        "away_score": 30,
+        "game_date": "2021-12-13"
+      },
+      {
+        "game_id": 76,
+        "home_team": "GB",
+        "away_team": "CHI",
+        "home_score": 45,
+        "away_score": 30,
+        "game_date": "2021-12-12"
+      },
+      {
+        "game_id": 77,
+        "home_team": "TB",
+        "away_team": "BUF",
+        "home_score": 33,
+        "away_score": 27,
+        "game_date": "2021-12-12"
+      },
+      {
+        "game_id": 78,
+        "home_team": "CIN",
+        "away_team": "SF",
+        "home_score": 23,
+        "away_score": 26,
+        "game_date": "2021-12-12"
+      },
+      {
+        "game_id": 79,
+        "home_team": "LAC",
+        "away_team": "NYG",
+        "home_score": 37,
+        "away_score": 21,
+        "game_date": "2021-12-12"
+      },
+      {
+        "game_id": 80,
+        "home_team": "DEN",
+        "away_team": "DET",
+        "home_score": 38,
+        "away_score": 10,
+        "game_date": "2021-12-12"
+      },
+      {
+        "game_id": 81,
+        "home_team": "CAR",
+        "away_team": "ATL",
+        "home_score": 21,
+        "away_score": 29,
+        "game_date": "2021-12-12"
+      },
+      {
+        "game_id": 82,
+        "home_team": "NYJ",
+        "away_team": "NO",
+        "home_score": 9,
+        "away_score": 30,
+        "game_date": "2021-12-12"
+      },
+      {
+        "game_id": 83,
+        "home_team": "KC",
+        "away_team": "LV",
+        "home_score": 48,
+        "away_score": 9,
+        "game_date": "2021-12-12"
+      },
+      {
+        "game_id": 84,
+        "home_team": "TEN",
+        "away_team": "JAX",
+        "home_score": 20,
+        "away_score": 0,
+        "game_date": "2021-12-12"
+      },
+      {
+        "game_id": 85,
+        "home_team": "CLE",
+        "away_team": "BAL",
+        "home_score": 24,
+        "away_score": 22,
+        "game_date": "2021-12-12"
+      },
+      {
+        "game_id": 86,
+        "home_team": "HOU",
+        "away_team": "SEA",
+        "home_score": 13,
+        "away_score": 33,
+        "game_date": "2021-12-12"
+      },
+      {
+        "game_id": 87,
+        "home_team": "WAS",
+        "away_team": "DAL",
+        "home_score": 20,
+        "away_score": 27,
+        "game_date": "2021-12-12"
+      },
+      {
+        "game_id": 88,
+        "home_team": "MIN",
+        "away_team": "PIT",
+        "home_score": 36,
+        "away_score": 28,
+        "game_date": "2021-12-09"
+      },
+      {
+        "game_id": 89,
+        "home_team": "BUF",
+        "away_team": "NE",
+        "home_score": 10,
+        "away_score": 14,
+        "game_date": "2021-12-06"
+      },
+      {
+        "game_id": 90,
+        "home_team": "KC",
+        "away_team": "DEN",
+        "home_score": 22,
+        "away_score": 9,
+        "game_date": "2021-12-05"
+      },
+      {
+        "game_id": 91,
+        "home_team": "PIT",
+        "away_team": "BAL",
+        "home_score": 20,
+        "away_score": 19,
+        "game_date": "2021-12-05"
+      },
+      {
+        "game_id": 92,
+        "home_team": "LAR",
+        "away_team": "JAX",
+        "home_score": 37,
+        "away_score": 7,
+        "game_date": "2021-12-05"
+      },
+      {
+        "game_id": 93,
+        "home_team": "LV",
+        "away_team": "WAS",
+        "home_score": 15,
+        "away_score": 17,
+        "game_date": "2021-12-05"
+      },
+      {
+        "game_id": 94,
+        "home_team": "HOU",
+        "away_team": "IND",
+        "home_score": 0,
+        "away_score": 31,
+        "game_date": "2021-12-05"
+      },
+      {
+        "game_id": 95,
+        "home_team": "NYJ",
+        "away_team": "PHI",
+        "home_score": 18,
+        "away_score": 33,
+        "game_date": "2021-12-05"
+      },
+      {
+        "game_id": 96,
+        "home_team": "MIA",
+        "away_team": "NYG",
+        "home_score": 20,
+        "away_score": 9,
+        "game_date": "2021-12-05"
+      },
+      {
+        "game_id": 97,
+        "home_team": "DET",
+        "away_team": "MIN",
+        "home_score": 29,
+        "away_score": 27,
+        "game_date": "2021-12-05"
+      },
+      {
+        "game_id": 98,
+        "home_team": "CIN",
+        "away_team": "LAC",
+        "home_score": 22,
+        "away_score": 41,
+        "game_date": "2021-12-05"
+      },
+      {
+        "game_id": 99,
+        "home_team": "CHI",
+        "away_team": "ARI",
+        "home_score": 22,
+        "away_score": 33,
+        "game_date": "2021-12-05"
+      },
+      {
+        "game_id": 100,
+        "home_team": "ATL",
+        "away_team": "TB",
+        "home_score": 17,
+        "away_score": 30,
+        "game_date": "2021-12-05"
+      },
+      {
+        "game_id": 101,
+        "home_team": "SEA",
+        "away_team": "SF",
+        "home_score": 30,
+        "away_score": 23,
+        "game_date": "2021-12-05"
+      },
+      {
+        "game_id": 102,
+        "home_team": "NO",
+        "away_team": "DAL",
+        "home_score": 17,
+        "away_score": 27,
+        "game_date": "2021-12-04"
+      }
+]

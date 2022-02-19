@@ -140,7 +140,7 @@
     {
       "code": "OAK",
       "name": "Raiders",
-      "full_name": "Oakland Raiders",
+      "full_name": "Las Vegas Raiders",
       "division": "AFC West"
     },
     {
@@ -186,7 +186,7 @@
       "division": "AFC South"
     },
     {
-      "code": "WAS",
+      "code": "WSH",
       "name": "Commanders",
       "full_name": "Washington Commanders",
       "division": "NFC East"

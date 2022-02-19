@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState} from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Navigation from "./components/Navigation";
@@ -7,8 +7,6 @@ import GameMatchups from "./pages/GameMatchups";
 import OneGameMatchup from "./pages/OneGameMatchup";
 
 function App() {
-  const [team1, team2] = useState()
-
   return (
     <>
       <Router>
