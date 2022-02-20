@@ -15,8 +15,9 @@ function HomePage() {
     const [selectedTeams, setSelectedTeams] = useState(0);
     
     const handleChange = (position) => {
+        console.log(position)
         const updatedCheckedState = checkedState.map((item, index) =>
-            index === position ? !item : item
+            index === parseInt(position) ? !item : item
         );
 
         setCheckedState(updatedCheckedState);
@@ -101,17 +102,17 @@ function HomePage() {
                 </p>
             </div>
             <div className="row">
-                {filteredTeams.map(({ full_name, division }, index) => {
+                {filteredTeams.map(({ full_name, division, id }) => {
                     return (
-                        <p className={division} key={index}>
+                        <p className={division} key={id}>
                             <input
                                 type="checkbox"
-                                id={`custom-checkbox-${index}`}
+                                id={`custom-checkbox-${id}`}
                                 name={full_name}
                                 value={full_name}
-                                checked={checkedState[index]}
-                                onChange={() => handleChange(index)} />
-                            <label htmlFor={`custom-checkbox-${index}`}>{full_name}</label>
+                                checked={checkedState[id]}
+                                onChange={() => handleChange(id)} />
+                            <label htmlFor={`custom-checkbox-${id}`}>{full_name}</label>
                         </p>
                     )
                 })}

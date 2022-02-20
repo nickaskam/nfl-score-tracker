@@ -1,191 +1,223 @@
 [
     {
+      "id": "0",
       "code": "ARI",
       "name": "Cardinals",
       "full_name": "Arizona Cardinals",
       "division": "NFC West"
     },
     {
+      "id": "1",
       "code": "ATL",
       "name": "Falcons",
       "full_name": "Atlanta Falcons",
       "division": "NFC South"
     },
     {
+      "id": "2",
       "code": "BAL",
       "name": "Ravens",
       "full_name": "Baltimore Ravens",
       "division": "AFC North"
     },
     {
+      "id": "3",
       "code": "BUF",
       "name": "Bills",
       "full_name": "Buffalo Bills",
       "division": "AFC East"
     },
     {
+      "id": "4",
       "code": "CAR",
       "name": "Panthers",
       "full_name": "Carolina Panthers",
       "division": "NFC South"
     },
     {
+      "id": "5",
       "code": "CHI",
       "name": "Bears",
       "full_name": "Chicago Bears",
       "division": "NFC North"
     },
     {
+      "id": "6",
       "code": "CIN",
       "name": "Bengals",
       "full_name": "Cincinnati Bengals",
       "division": "AFC North"
     },
     {
+      "id": "7",
       "code": "CLE",
       "name": "Browns",
       "full_name": "Cleveland Browns",
       "division": "AFC North"
     },
     {
+      "id": "8",
       "code": "DAL",
       "name": "Cowboys",
       "full_name": "Dallas Cowboys",
       "division": "NFC East"
     },
     {
+      "id": "9",
       "code": "DEN",
       "name": "Broncos",
       "full_name": "Denver Broncos",
       "division": "AFC West"
     },
     {
+      "id": "10",
       "code": "DET",
       "name": "Lions",
       "full_name": "Detroit Lions",
       "division": "NFC North"
     },
     {
+      "id": "11",
       "code": "GB",
       "name": "Packers",
       "full_name": "Green Bay Packers",
       "division": "NFC North"
     },
     {
+      "id": "12",
       "code": "HOU",
       "name": "Texans",
       "full_name": "Houston Texans",
       "division": "AFC South"
     },
     {
+      "id": "13",
       "code": "IND",
       "name": "Colts",
       "full_name": "Indianapolis Colts",
       "division": "AFC South"
     },
     {
+      "id": "14",
       "code": "JAX",
       "name": "Jaguars",
       "full_name": "Jacksonville Jaguars",
       "division": "AFC South"
     },
     {
+      "id": "15",
       "code": "KC",
       "name": "Chiefs",
       "full_name": "Kansas City Chiefs",
       "division": "AFC West"
     },
     {
+      "id": "16",
       "code": "LAR",
       "name": "Rams",
       "full_name": "Los Angeles Rams",
       "division": "NFC West"
     },
     {
+      "id": "17",
       "code": "MIA",
       "name": "Dolphins",
       "full_name": "Miami Dolphins",
       "division": "AFC East"
     },
     {
+      "id": "18",
       "code": "MIN",
       "name": "Vikings",
       "full_name": "Minnesota Vikings",
       "division": "NFC North"
     },
     {
+      "id": "19",
       "code": "NE",
       "name": "Patriots",
       "full_name": "New England Patriots",
       "division": "AFC East"
     },
     {
+      "id": "20",
       "code": "NO",
       "name": "Saints",
       "full_name": "New Orleans Saints",
       "division": "NFC South"
     },
     {
+      "id": "21",
       "code": "NYG",
       "name": "Giants",
       "full_name": "New York Giants",
       "division": "NFC East"
     },
     {
+      "id": "22",
       "code": "NYJ",
       "name": "Jets",
       "full_name": "New York Jets",
       "division": "AFC East"
     },
     {
+      "id": "23",
       "code": "OAK",
       "name": "Raiders",
       "full_name": "Las Vegas Raiders",
       "division": "AFC West"
     },
     {
+      "id": "24",
       "code": "PHI",
       "name": "Eagles",
       "full_name": "Philadelphia Eagles",
       "division": "NFC East"
     },
     {
+      "id": "25",
       "code": "PIT",
       "name": "Steelers",
       "full_name": "Pittsburgh Steelers",
       "division": "AFC North"
     },
     {
+      "id": "26",
       "code": "LAC",
       "name": "Chargers",
       "full_name": "Los Angeles Chargers",
       "division": "AFC West"
     },
     {
+      "id": "27",
       "code": "SF",
       "name": "49ers",
       "full_name": "San Francisco 49ers",
       "division": "NFC West"
     },
     {
+      "id": "28",
       "code": "SEA",
       "name": "Seahawks",
       "full_name": "Seattle Seahawks",
       "division": "NFC West"
     },
     {
+      "id": "29",
       "code": "TB",
       "name": "Buccaneers",
       "full_name": "Tampa Bay Buccaneers",
       "division": "NFC South"
     },
     {
+      "id": "30",
       "code": "TEN",
       "name": "Titans",
       "full_name": "Tennessee Titans",
       "division": "AFC South"
     },
     {
+      "id": "31",
       "code": "WSH",
       "name": "Commanders",
       "full_name": "Washington Commanders",
