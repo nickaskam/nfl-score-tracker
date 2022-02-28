@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react"; 
 import { useParams } from "react-router-dom";
-import stadiumLogo from "../assets/lumenField.png";
 import nflTeams from "../data/nflTeams.json";
 import nflGames3 from "../data/gameScores3.json";
 import axios from "axios";
@@ -42,28 +41,35 @@ function OneGameMatchup() {
     let url_2 = 'http://localhost:5000/image/' + team1Object.full_name.replace(/\s/g, '+')
     // logo two
     let url_3 = 'http://localhost:5000/image/' + team2Object.full_name.replace(/\s/g, '+')
+    // map
+    let url_4 = 'http://localhost:5000/homeMap/' + team1Object.homeLat + ',' + team1Object.homeLong
 
     const [getMessage, setGetMessage] = useState({})
     const [getLogoOne, setLogoOne] = useState({})
     const [getLogoTwo, setLogoTwo] = useState({})
+    const [getMap, setMap] = useState({})
 
     useEffect(() =>{
 
         const requestOne = axios.get(url_1);
         const requestTwo = axios.get(url_2);
         const requestThree = axios.get(url_3);
+        const requestFour = axios.get(url_4)
 
-        axios.all([requestOne, requestTwo, requestThree]).then(axios.spread((...responses) => {
+        axios.all([requestOne, requestTwo, requestThree, requestFour]).then(axios.spread((...responses) => {
             const responseOne = responses[0]
             const responseTwo = responses[1]
             const responseThree = responses[2]
+            const responseFour = responses[3]
             setGetMessage(responses[0])
             setLogoOne(responses[1])
             setLogoTwo(responses[2])
+            setMap(responses[3])
             // use/access the results 
             console.log("responseOne",responseOne);
             console.log("responseTwo",responseTwo);
             console.log("responesThree",responseThree);
+            console.log("responsesFour",responseFour)
             })).catch(errors => {
             console.log(errors);
         })
@@ -91,7 +97,11 @@ function OneGameMatchup() {
             </p>
             <div>
                 <p className="right">
-                    Put in map for latitude - {team1Object.homeLat} and longitude - {team1Object.homeLong} 
+                    {/* Put in map for latitude - {team1Object.homeLat} and longitude - {team1Object.homeLong} */}
+                    {getMap.status === 200 ? 
+                    <img src={getMap.data} className="stadiumImage"/>
+                    :
+                    <li>LOADING</li>} 
                     {/* <img src={stadiumLogo} className="stadiumImage"/> */}
                 </p>
             </div>
