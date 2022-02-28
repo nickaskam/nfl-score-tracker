@@ -5,8 +5,9 @@
     "name": "Cardinals",
     "full_name": "Arizona Cardinals",
     "division": "NFC West",
-    "homeLong": 33.5277,
-    "homeLat": -112.262608
+    "homeLat": 33.5277,
+    "homeLong": -112.262608,
+    "stadiumName": "State Farm Stadium"
   },
   {
     "id": 1,
@@ -14,8 +15,9 @@
     "name": "Falcons",
     "full_name": "Atlanta Falcons",
     "division": "NFC South",
-    "homeLong": 33.757614,
-    "homeLat": -84.400972
+    "homeLat": 33.757614,
+    "homeLong": -84.400972,
+    "stadiumName": "Mercedes-Benz Stadium"
   },
   {
     "id": 2,
@@ -23,8 +25,9 @@
     "name": "Ravens",
     "full_name": "Baltimore Ravens",
     "division": "AFC North",
-    "homeLong": 39.277969,
-    "homeLat": -76.622767
+    "homeLat": 39.277969,
+    "homeLong": -76.622767,
+    "stadiumName": "M&T Bank Stadium"
   },
   {
     "id": 3,
@@ -32,8 +35,9 @@
     "name": "Bills",
     "full_name": "Buffalo Bills",
     "division": "AFC East",
-    "homeLong": 42.773773,
-    "homeLat": -78.78746
+    "homeLat": 42.773773,
+    "homeLong": -78.78746,
+    "stadiumName": "Highmark Stadium"
   },
   {
     "id": 4,
@@ -41,8 +45,9 @@
     "name": "Panthers",
     "full_name": "Carolina Panthers",
     "division": "NFC South",
-    "homeLong": 35.225808,
-    "homeLat": -80.852861
+    "homeLat": 35.225808,
+    "homeLong": -80.852861,
+    "stadiumName": "Bank of America Stadium"
   },
   {
     "id": 5,
@@ -50,8 +55,9 @@
     "name": "Bears",
     "full_name": "Chicago Bears",
     "division": "NFC North",
-    "homeLong": 41.862366,
-    "homeLat": -87.617256
+    "homeLat": 41.862366,
+    "homeLong": -87.617256,
+    "stadiumName": "Soldier Field"
   },
   {
     "id": 6,
@@ -59,8 +65,9 @@
     "name": "Bengals",
     "full_name": "Cincinnati Bengals",
     "division": "AFC North",
-    "homeLong": 39.095442,
-    "homeLat": -84.516039
+    "homeLat": 39.095442,
+    "homeLong": -84.516039,
+    "stadiumName": "Paul Brown Stadium"
   },
   {
     "id": 7,
@@ -68,8 +75,9 @@
     "name": "Browns",
     "full_name": "Cleveland Browns",
     "division": "AFC North",
-    "homeLong": 41.506022,
-    "homeLat": -81.699564
+    "homeLat": 41.506022,
+    "homeLong": -81.699564,
+    "stadiumName": "FirstEnergy Stadium"
   },
   {
     "id": 8,
@@ -77,8 +85,9 @@
     "name": "Cowboys",
     "full_name": "Dallas Cowboys",
     "division": "NFC East",
-    "homeLong": 32.747778,
-    "homeLat": -97.092778
+    "homeLat": 32.747778,
+    "homeLong": -97.092778,
+    "stadiumName": "AT&T Stadium"
   },
   {
     "id": 9,
@@ -86,8 +95,9 @@
     "name": "Broncos",
     "full_name": "Denver Broncos",
     "division": "AFC West",
-    "homeLong": 39.743936,
-    "homeLat": -105.020097
+    "homeLat": 39.743936,
+    "homeLong": -105.020097,
+    "stadiumName": "Empower Field at Mile High"
   },
   {
     "id": 10,
@@ -95,8 +105,9 @@
     "name": "Lions",
     "full_name": "Detroit Lions",
     "division": "NFC North",
-    "homeLong": 42.340156,
-    "homeLat": -83.045808
+    "homeLat": 42.340156,
+    "homeLong": -83.045808,
+    "stadiumName": "Ford Field"
   },
   {
     "id": 11,
@@ -104,8 +115,9 @@
     "name": "Packers",
     "full_name": "Green Bay Packers",
     "division": "NFC North",
-    "homeLong": 44.501306,
-    "homeLat": -88.062167
+    "homeLat": 44.501306,
+    "homeLong": -88.062167,
+    "stadiumName": "Lambeau Field"
   },
   {
     "id": 12,
@@ -113,8 +125,9 @@
     "name": "Texans",
     "full_name": "Houston Texans",
     "division": "AFC South",
-    "homeLong": 29.684781,
-    "homeLat": -95.410956
+    "homeLat": 29.684781,
+    "homeLong": -95.410956,
+    "stadiumName": "NRG Stadium"
   },
   {
     "id": 13,
@@ -122,8 +135,9 @@
     "name": "Colts",
     "full_name": "Indianapolis Colts",
     "division": "AFC South",
-    "homeLong": 39.759991,
-    "homeLat": -86.163712
+    "homeLat": 39.759991,
+    "homeLong": -86.163712,
+    "stadiumName": "Lucas Oil Stadium"
   },
   {
     "id": 14,
@@ -131,8 +145,9 @@
     "name": "Jaguars",
     "full_name": "Jacksonville Jaguars",
     "division": "AFC South",
-    "homeLong": 30.323925,
-    "homeLat": -81.637356
+    "homeLat": 30.323925,
+    "homeLong": -81.637356,
+    "stadiumName": "TIAA Bank Field"
   },
   {
     "id": 15,
@@ -140,8 +155,9 @@
     "name": "Chiefs",
     "full_name": "Kansas City Chiefs",
     "division": "AFC West",
-    "homeLong": 39.048914,
-    "homeLat": -94.484039
+    "homeLat": 39.048914,
+    "homeLong": -94.484039,
+    "stadiumName": "Arrowhead Stadium"
   },
   {
     "id": 16,
@@ -149,8 +165,9 @@
     "name": "Rams",
     "full_name": "Los Angeles Rams",
     "division": "NFC West",
-    "homeLong": 33.953587,
-    "homeLat": -118.33963
+    "homeLat": 33.953587,
+    "homeLong": -118.33963,
+    "stadiumName": "SoFi Stadium"
   },
   {
     "id": 17,
@@ -158,8 +175,9 @@
     "name": "Dolphins",
     "full_name": "Miami Dolphins",
     "division": "AFC East",
-    "homeLong": 25.95796,
-    "homeLat": -80.239311
+    "homeLat": 25.95796,
+    "homeLong": -80.239311,
+    "stadiumName": "Hard Rock Stadium"
   },
   {
     "id": 18,
@@ -167,8 +185,9 @@
     "name": "Vikings",
     "full_name": "Minnesota Vikings",
     "division": "NFC North",
-    "homeLong": 44.973881,
-    "homeLat": -93.258094
+    "homeLat": 44.973881,
+    "homeLong": -93.258094,
+    "stadiumName": "US Bank Stadium"
   },
   {
     "id": 19,
@@ -176,8 +195,9 @@
     "name": "Patriots",
     "full_name": "New England Patriots",
     "division": "AFC East",
-    "homeLong": 42.090925,
-    "homeLat": -71.26435
+    "homeLat": 42.090925,
+    "homeLong": -71.26435,
+    "stadiumName": "Gillette Stadium"
   },
   {
     "id": 20,
@@ -185,8 +205,9 @@
     "name": "Saints",
     "full_name": "New Orleans Saints",
     "division": "NFC South",
-    "homeLong": 29.950931,
-    "homeLat": -90.081364
+    "homeLat": 29.950931,
+    "homeLong": -90.081364,
+    "stadiumName": "Caesars Superdome"
   },
   {
     "id": 21,
@@ -194,8 +215,9 @@
     "name": "Giants",
     "full_name": "New York Giants",
     "division": "NFC East",
-    "homeLong": 40.812194,
-    "homeLat": -74.076983
+    "homeLat": 40.812194,
+    "homeLong": -74.076983,
+    "stadiumName": "Metlife Stadium"
   },
   {
     "id": 22,
@@ -203,8 +225,9 @@
     "name": "Jets",
     "full_name": "New York Jets",
     "division": "AFC East",
-    "homeLong": 40.812194,
-    "homeLat": -74.076983
+    "homeLat": 40.812194,
+    "homeLong": -74.076983,
+    "stadiumName": "Metlife Stadium"
   },
   {
     "id": 23,
@@ -212,8 +235,9 @@
     "name": "Raiders",
     "full_name": "Las Vegas Raiders",
     "division": "AFC West",
-    "homeLong": 36.0909,
-    "homeLat": -115.1833
+    "homeLat": 36.0909,
+    "homeLong": -115.1833,
+    "stadiumName": "Allegiant Stadium"
   },
   {
     "id": 24,
@@ -221,8 +245,9 @@
     "name": "Eagles",
     "full_name": "Philadelphia Eagles",
     "division": "NFC East",
-    "homeLong": 39.900775,
-    "homeLat": -75.167453
+    "homeLat": 39.900775,
+    "homeLong": -75.167453,
+    "stadiumName": "Lincoln Financial Field"
   },
   {
     "id": 25,
@@ -230,8 +255,9 @@
     "name": "Steelers",
     "full_name": "Pittsburgh Steelers",
     "division": "AFC North",
-    "homeLong": 40.446786,
-    "homeLat": -80.015761
+    "homeLat": 40.446786,
+    "homeLong": -80.015761,
+    "stadiumName": "Heinz Field"
   },
   {
     "id": 26,
@@ -239,8 +265,9 @@
     "name": "Chargers",
     "full_name": "Los Angeles Chargers",
     "division": "AFC West",
-    "homeLong": 33.953587,
-    "homeLat": -118.33963
+    "homeLat": 33.953587,
+    "homeLong": -118.33963,
+    "stadiumName": "SoFi Stadium"
   },
   {
     "id": 27,
@@ -248,8 +275,9 @@
     "name": "49ers",
     "full_name": "San Francisco 49ers",
     "division": "NFC West",
-    "homeLong": 37.4033,
-    "homeLat": -121.9694
+    "homeLat": 37.4033,
+    "homeLong": -121.9694,
+    "stadiumName": "Levis Stadium"
   },
   {
     "id": 28,
@@ -257,8 +285,9 @@
     "name": "Seahawks",
     "full_name": "Seattle Seahawks",
     "division": "NFC West",
-    "homeLong": 47.595153,
-    "homeLat": -122.331625
+    "homeLat": 47.595153,
+    "homeLong": -122.331625,
+    "stadiumName": "Lumen Field"
   },
   {
     "id": 29,
@@ -266,8 +295,9 @@
     "name": "Buccaneers",
     "full_name": "Tampa Bay Buccaneers",
     "division": "NFC South",
-    "homeLong": 27.975958,
-    "homeLat": -82.503693
+    "homeLat": 27.975958,
+    "homeLong": -82.503693,
+    "stadiumName": "Raymond James Stadium"
   },
   {
     "id": 30,
@@ -275,8 +305,9 @@
     "name": "Titans",
     "full_name": "Tennessee Titans",
     "division": "AFC South",
-    "homeLong": 36.166461,
-    "homeLat": -86.771289
+    "homeLat": 36.166461,
+    "homeLong": -86.771289,
+    "stadiumName": "Nissan Stadium"
   },
   {
     "id": 31,
@@ -284,7 +315,8 @@
     "name": "Commanders",
     "full_name": "Washington Commanders",
     "division": "NFC East",
-    "homeLong": 38.907697,
-    "homeLat": -76.864517
+    "homeLat": 38.907697,
+    "homeLong": -76.864517,
+    "stadiumName": "FedEx Field"
   }
 ]

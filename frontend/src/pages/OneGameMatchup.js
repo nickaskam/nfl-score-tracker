@@ -87,7 +87,7 @@ function OneGameMatchup() {
                     <li>LOADING</li>}
             </h1>
             <p>
-                This game took place at {team1Object.full_name}'s stadium
+                This game took place at {team1Object.stadiumName}'s stadium
             </p>
             <div>
                 <p className="right">
