@@ -58,13 +58,10 @@ function GameMatchups() {
         navigate(`/oneGameMatchup/${id}`)
     } 
 
-    // get logos
-
     return (
         <>
             <h1 className="centered">
-            {/* <img src={cowboysLogo} className="logo" /> {team1Object.full_name} vs {team2Object.full_name} <img src={seahawksLogo} className="logo" /> */}
-            Logo 1 {team1Object.full_name} vs {team2Object.full_name} Logo 2
+            {team1Object.full_name} vs {team2Object.full_name}
             </h1>
             <p className="centered">
                 These are the matchups between the two teams heads to head recently
