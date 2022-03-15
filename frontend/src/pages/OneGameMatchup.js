@@ -40,27 +40,29 @@ function OneGameMatchup() {
     // map
     let url_4 = 'http://localhost:5000/homeMap/' + team1Object.homeLat + ',' + team1Object.homeLong
 
-    const [getMessage, setGetMessage] = useState({})
+    const [getFacts, setFacts] = useState({})
     const [getLogoOne, setLogoOne] = useState({})
     const [getLogoTwo, setLogoTwo] = useState({})
     const [getMap, setMap] = useState({})
 
     useEffect(() =>{
 
-        const requestOne = axios.get(url_1);
-        const requestTwo = axios.get(url_2);
-        const requestThree = axios.get(url_3);
-        const requestFour = axios.get(url_4)
+        const requestFacts = axios.get(url_1);
+        const requestLogoOne = axios.get(url_2);
+        const requestLogoTwo = axios.get(url_3);
+        const requestMap = axios.get(url_4)
 
-        axios.all([requestOne, requestTwo, requestThree, requestFour]).then(axios.spread((...responses) => {
-            const responseOne = responses[0]
-            const responseTwo = responses[1]
-            const responseThree = responses[2]
-            const responseFour = responses[3]
-            setGetMessage(responseOne)
-            setLogoOne(responseTwo)
-            setLogoTwo(responseThree)
-            setMap(responseFour)
+        axios
+            .all([requestFacts, requestLogoOne, requestLogoTwo, requestMap])
+            .then(axios.spread((...responses) => {
+                const responseFacts = responses[0]
+                const responseLogoOne = responses[1]
+                const responseLogoTwo = responses[2]
+                const responseMap = responses[3]
+                setFacts(responseFacts)
+                setLogoOne(responseLogoOne)
+                setLogoTwo(responseLogoTwo)
+                setMap(responseMap)
             })).catch(errors => {
             console.log(errors);
         })
@@ -88,7 +90,7 @@ function OneGameMatchup() {
             </p>
             <div>
                 <p className="right">
-                    {/* Put in map for latitude - {team1Object.homeLat} and longitude - {team1Object.homeLong} */}
+                    {/* Put in map for home stadium */}
                     {getMap.status === 200 ? 
                     <img src={getMap.data} className="stadiumImage"/>
                     :
@@ -118,8 +120,9 @@ function OneGameMatchup() {
             <div>
                 <p>More About the Home Team - {team1Object.full_name}: </p>
                 <ul>
-                    <div>{getMessage.status === 200 ? 
-                        <li>{getMessage.data}</li>
+                    {/* get facts for home team */}
+                    <div>{getFacts.status === 200 ? 
+                        <li>{getFacts.data}</li>
                         :
                         <li>LOADING</li>}</div>
                 </ul>

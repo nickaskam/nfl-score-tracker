@@ -30,7 +30,8 @@ function GameMatchups() {
     const gameMatchups = [...nflGames3]
     let activeGames = []
     for (let i = 0, len = gameMatchups.length; i < len; i++) {
-        if (gameMatchups[i].team1 === team1Object.code && gameMatchups[i].team2 === team2Object.code) {
+        if (gameMatchups[i].team1 === team1Object.code && 
+            gameMatchups[i].team2 === team2Object.code) {
             activeGames.push(gameMatchups[i])
             // check for tie
             if (gameMatchups[i].score1 > gameMatchups[i].score2) {
@@ -40,7 +41,8 @@ function GameMatchups() {
             } else {
                 teamTies ++
             }
-        } else if (gameMatchups[i].team1 === team2Object.code && gameMatchups[i].team2 === team1Object.code) {
+        } else if (gameMatchups[i].team1 === team2Object.code && 
+                    gameMatchups[i].team2 === team1Object.code) {
             activeGames.push(gameMatchups[i])
             // check for tie
             if (gameMatchups[i].score1 > gameMatchups[i].score2) {
