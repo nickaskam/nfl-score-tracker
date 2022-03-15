@@ -104,16 +104,25 @@ function HomePage() {
             <div className="row">
                 {filteredTeams.map(({ full_name, division, id }) => {
                     return (
-                        <p className={division} key={id}>
-                            <input
-                                type="checkbox"
-                                id={`custom-checkbox-${id}`}
-                                name={full_name}
-                                value={full_name}
-                                checked={checkedState[id]}
-                                onChange={() => handleChange(id)} />
-                            <label htmlFor={`custom-checkbox-${id}`}>{full_name}</label>
-                        </p>
+                        <div className={division} key={id}>
+                            <div className="card" style={{ marginBottom: '10px' }}>
+                                <div className="card-body">
+                                    <input
+                                        className="form-check-input"
+                                        type="checkbox"
+                                        id={`custom-checkbox-${id}`}
+                                        name={full_name}
+                                        value={full_name}
+                                        checked={checkedState[id]}
+                                        onChange={() => handleChange(id)} />
+                                    <label 
+                                        htmlFor={`custom-checkbox-${id}`}
+                                        style={{ paddingLeft: '8px' }}>
+                                            {full_name}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     )
                 })}
             </div>

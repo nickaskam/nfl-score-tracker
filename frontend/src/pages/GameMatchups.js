@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import nflTeams from "../data/nflTeams.json";
-import nflGames3 from "../data/gameScores3.json";
+import nflGames3 from "../data/gameScores.json";
 
 function GameMatchups() {
     let { team1, team2 } = useParams();
@@ -72,12 +72,14 @@ function GameMatchups() {
             <div className="games">
                 {activeGames.reverse().map(({ date, team1, team2, score1, score2, id }) => {
                     return (
-                        <div className="individualGame" key={id}>
-                            <h3>Game Date: {date}</h3>
-                            <p>{team1} {score1} vs {score2} {team2}</p>
-                            <button onClick={() => findGames(id)}>
-                                See the Game Details
-                            </button>
+                        <div className="card text-dark bg-light" key={id} style={{ margin: '2px' }}>
+                            <div className="card-body">
+                                <h5 className="card-title">Game Date: {date}</h5>
+                                <p className="card-text">{team1} {score1} vs {score2} {team2}</p>
+                                <button onClick={() => findGames(id)}>
+                                    See the Game Details
+                                </button>
+                            </div>
                         </div>
                     )
                 })}

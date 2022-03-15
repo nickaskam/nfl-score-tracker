@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"; 
 import { useParams } from "react-router-dom";
 import nflTeams from "../data/nflTeams.json";
-import nflGames3 from "../data/gameScores3.json";
+import nflGames3 from "../data/gameScores.json";
 import axios from "axios";
 
 function OneGameMatchup() {
@@ -15,7 +15,6 @@ function OneGameMatchup() {
             selectedGame = gameMatchups[i]
         }
     }
-    console.log(selectedGame);
 
     // Find the team names
     let loadedTeamsIndex = loadedTeams.length - 1
@@ -31,12 +30,9 @@ function OneGameMatchup() {
         }
         loadedTeamsIndex --;
     }
-    console.log(team1Object)
-    console.log(team2Object)
 
     // team info
     let url_1 = 'http://localhost:5000/teamdata/' + team1Object.full_name.replace(/\s/g, '+')
-    // console.log(url_1)
     // logo one
     let url_2 = 'http://localhost:5000/image/' + team1Object.full_name.replace(/\s/g, '+')
     // logo two
@@ -61,15 +57,10 @@ function OneGameMatchup() {
             const responseTwo = responses[1]
             const responseThree = responses[2]
             const responseFour = responses[3]
-            setGetMessage(responses[0])
-            setLogoOne(responses[1])
-            setLogoTwo(responses[2])
-            setMap(responses[3])
-            // use/access the results 
-            console.log("responseOne",responseOne);
-            console.log("responseTwo",responseTwo);
-            console.log("responesThree",responseThree);
-            console.log("responsesFour",responseFour)
+            setGetMessage(responseOne)
+            setLogoOne(responseTwo)
+            setLogoTwo(responseThree)
+            setMap(responseFour)
             })).catch(errors => {
             console.log(errors);
         })
@@ -84,13 +75,13 @@ function OneGameMatchup() {
                 {getLogoOne.status === 200 ? 
                     <img src={getLogoOne.data} className="logo"/>
                     :
-                    <li>LOADING</li>}
+                    <span>Loading </span>}
                 {team1Object.full_name} vs {team2Object.full_name} 
                 {/* get logo two */}
                 {getLogoTwo.status === 200 ? 
                     <img src={getLogoTwo.data} className="logo"/>
                     :
-                    <li>LOADING</li>}
+                    <span> Loading </span>}
             </h1>
             <p>
                 This game took place at {team1Object.stadiumName}'s stadium
@@ -101,8 +92,7 @@ function OneGameMatchup() {
                     {getMap.status === 200 ? 
                     <img src={getMap.data} className="stadiumImage"/>
                     :
-                    <li>LOADING</li>} 
-                    {/* <img src={stadiumLogo} className="stadiumImage"/> */}
+                    <span>Loading Image</span>}
                 </p>
             </div>
             <div className="gameHolder">

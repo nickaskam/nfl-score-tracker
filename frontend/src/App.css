@@ -58,15 +58,6 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.individualGame {
-  border: 1px solid black;
-  margin-bottom: 5px;
-  padding-top: 5px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-
 .stadiumImage {
   width: 30%;
   float: right;
@@ -105,4 +96,8 @@ th, td {
 
 .gameHolder {
   width: 60%;
+}
+
+.card-body {
+  text-align: center;
 }
